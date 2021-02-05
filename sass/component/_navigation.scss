@@ -1,0 +1,68 @@
+.position {
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.nav {
+    display: inline-block;
+    width: 30%;
+    position: relative;
+
+    &__1 {
+        background-image: linear-gradient(to right bottom, #ffa500, #ff4500);
+        width: 25%;
+        height: 100vh;
+        
+    }
+
+    &__2 {
+        background-color: $color-grey-light-2;
+        padding: 1rem 0rem 5rem 3rem;
+        width: 75%;
+        // height: 200rem;
+        float: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &__list {
+        list-style: none;
+        @include absCenter;
+        text-align: center;
+
+        &-link {
+            &:link,
+            &:visited {
+                color:#c7c2c2;
+                font-size: $default-font-size;
+                font-weight: bolder;
+                text-transform: uppercase;
+                text-decoration: none;
+                line-height: 3rem;
+                letter-spacing: .1rem;
+                transition: all .2s;
+
+                &:link:hover,
+                &:visited:hover {
+                    color: $color-grey-dark-3
+                }
+
+                &:link:focus,
+                &:visited:focus {
+                    color: $color-grey-dark-3
+                }
+            }
+        }
+    }
+
+    &__img {
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        width: 100%;
+        height: auto;
+        border: .5rem solid #e79a0b
+    }
+    
+}

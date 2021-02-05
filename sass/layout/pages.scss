@@ -1,0 +1,40 @@
+.secound {
+    font-size: 5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    // background-image: linear-gradient(to right, #e79a0b, #ff0000);
+    // -webkit-background-clip: text;
+    // background-clip: text;
+    // color: transparent;
+    color: $color-black;
+}
+
+.third {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+.Project {
+    font-size: 1.6rem;
+}
+
+.project__list {
+    list-style: none;
+
+    &-item {
+        line-height: 2rem;
+
+        &-link {
+            color:#bb3605;
+            font-size: 1.5rem;
+            text-decoration: none;
+
+            &:hover {
+                color: #ffa500;
+                text-decoration: underline;
+
+            }
+        }
+    } 
+}

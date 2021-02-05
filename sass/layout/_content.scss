@@ -1,0 +1,33 @@
+.first {
+    font-size: 7rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, #e79a0b, #ff0000);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: all .2s;
+
+    &:hover {
+        background-image: linear-gradient(to right, #e79a0b, orange);
+    }
+
+    &__paragraph {
+        max-width: 114rem;
+        color: $color-black;
+        font-size: 2rem;
+        text-transform: uppercase;
+        transform: translateY(-3rem);
+
+        &__profile {
+            font-size: 2rem;
+            font-family: "Lato", sans-serif;
+
+            &:not(:last-child) {
+                margin-bottom: 3rem;
+            }
+        }
+    }
+
+}
