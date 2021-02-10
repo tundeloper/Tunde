@@ -1,15 +1,22 @@
 {
-  "name": "my-cv",
+  "name": "tunde",
   "version": "1.0.0",
-  "description": "My cv",
-  "main": "index.js",
+  "description": "tunde",
+  "main": "attribution.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass --watch --recursive --output css --source-map true --source-map-contents sass"
   },
-  "author": "Babatunde",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tundeloper/Tunde.git"
+  },
+  "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
+  "bugs": {
+    "url": "https://github.com/tundeloper/Tunde/issues"
+  },
+  "homepage": "https://github.com/tundeloper/Tunde#readme",
+  "dependencies": {
     "node-sass": "^5.0.0"
   }
 }
